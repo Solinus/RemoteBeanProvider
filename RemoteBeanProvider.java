@@ -19,8 +19,8 @@ public class RemoteBeanProvider {
 		props.put("java.naming.factory.initial",
 				"org.jboss.naming.remote.client.InitialContextFactory");
 		props.put(Context.PROVIDER_URL, "remote://localhost:4447");
-		props.put(Context.SECURITY_PRINCIPAL, "ejb");
-		props.put(Context.SECURITY_CREDENTIALS, "ejb1");
+		props.put(Context.SECURITY_PRINCIPAL, "login");
+		props.put(Context.SECURITY_CREDENTIALS, "password");
 		props.put("java.naming.factory.url.pkgs",
 				"org.jboss.naming:org.jnp.interfaces");
 		props.put("jboss.naming.client.ejb.context", true);
